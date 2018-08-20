@@ -192,21 +192,18 @@ return message.channel.send(botembed);
  .setColor("#4286f4")
  .addField("רמות גבוהות", "<@461151799924228108>")
  .addField("רמות נמוכות", "<@354982773951430656>")
+}
 
- if(message.content == 'שון'){
+if(cmd === `${prefix}prefix`){
 
-   message.channel.sendMessage('מה? ' + message.author);
- }
+message.channel.sendMessage("!")
+}
 
- if(message.content == 'יואב'){
-
-   message.channel.sendMessage('<@270928517896732672> ' + message.author + ', אה כפרה?');
- }
 
  return message.channel.send(botembed);
- }
+
 
 
 });
 
-bot.login(process.env.BOT_TOKEN);
+bot.login(botconfig.token);
