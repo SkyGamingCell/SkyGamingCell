@@ -212,4 +212,5 @@ return message.channel.send(botembed);
 
 });
 
-bot.login(botconfig.token);
+bot.login(process.env.BOT_TOKEN);
+
