@@ -25,8 +25,6 @@ bot.on("message",async message =>{
 const logsCommands = bot.channels.get(botconfig.logsChannelID);
 const logsCommands2 = bot.channels.get(botconfig.logsChannelID);
 
-client.login(process.env.BOT_TOKEN);
-
   if(message.channel.type == "dm") {
     console.log(`${message.author.tag} שלח לי הודעה פרטית!`);
     return logsCommands.send(`${message.author.tag} שלח לי הודעה פרטית!`);
