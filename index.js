@@ -29,7 +29,7 @@ const logsCommands2 = bot.channels.get(botconfig.logsChannelID);
     return logsCommands.send(`${message.author.tag} שלח לי הודעה פרטית!`);
 }
 
- let prefix = botconfig.prefix;
+ let prefix = process.env.BOT_PREFIX;
  let messageArray = message.content.split(" ");
  let cmd = messageArray[0];
  let args = messageArray.slice(1);
