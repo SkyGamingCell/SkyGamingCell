@@ -22,7 +22,7 @@ bot.on("guildDelete", guild => {
 
 bot.on("message",async message =>{
 const logsCommands = bot.channels.get(botconfig.logsChannelID);
-const logsCommands2 = bot.channels.get(botconfig.logsChannelID);
+const logsCommands2 = bot.channels.get(botconfig.logsChannelID2);
 
   if(message.channel.type == "dm") {
     console.log(`${message.author.tag} שלח לי הודעה פרטית!`);
@@ -34,13 +34,15 @@ const logsCommands2 = bot.channels.get(botconfig.logsChannelID);
  let cmd = messageArray[0];
  let args = messageArray.slice(1);
 
+ //------------------------------------------^^ DONT TOUCH HERE ^^------------------------------------------
+ 
+ //kick command
  if(cmd === `${prefix}kick`){
    let kUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
    if(!kUser) return message.channel.send("Can't find user!");
    let kReason = args.join(" ").slice(22);
    if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("No can do pal!")
    if(kUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("That person can't be kicked!");
-
 let kickEmbed = new Discord.RichEmbed()
 .setDescription("~kick~")
 .setColor("#42f4e8")
@@ -49,10 +51,7 @@ let kickEmbed = new Discord.RichEmbed()
 .addField("Kicked In", message.channel)
 .addField("Time", message.createdAt)
 .addField("Reason", kReason);
-
 message.delete().catch(O_o=>{});
-
-
 
 let kickChannel = message.guild.channels.find(`name`, "incidents")
 if(!kickChannel) return message.channel.send("Can't find incidents channel")
@@ -66,9 +65,9 @@ console.log(`${message.author.tag} Ask for help from the bot`);
    return;
  }
 
+ 
+ //report command
 if(cmd === `${prefix}report`){
-
-
 
 let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
 if(!rUser) return message.channel.send("Couldn't find user.");
@@ -94,6 +93,7 @@ reportschannel.send(reportEmbed)
   return;
 }
 
+ //ban command
 if(cmd === `${prefix}ban`){
 
 let bUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
@@ -121,6 +121,7 @@ message.guild.member(bUser).ban(bReason);
 incidentchannel.send(banEmbed);
 }
 
+ //server info
 if(cmd === `${prefix}serverinfo`){
      let sicon = message.guild.iconURL;
      let serverembed = new Discord.RichEmbed()
@@ -132,11 +133,10 @@ if(cmd === `${prefix}serverinfo`){
      .addField("Join Date", message.member.joinedAt)
      .addField("Member Count", message.guild.memberCount);
 
-
-
      return message.channel.send(serverembed);
    }
 
+ //קללה מגניבה
    if(message.content == 'לך תזדיין'){
 
      message.delete().catch(O_o=>{});
@@ -144,6 +144,7 @@ if(cmd === `${prefix}serverinfo`){
      return logsCommands.send(`${message.author.tag}  השתמש במילה לך תזדיין, מגיע אזהרה או העפה, תלוי במקרה.`);
    }
 
+ //bot info command
 if(cmd === `${prefix}botinfo`){
 
 let bicon = bot.user.displayAvatarURL;
@@ -159,6 +160,7 @@ let botembed = new Discord.RichEmbed()
 return message.channel.send(botembed);
  }
 
+ //stw help
  if(cmd === `${prefix}stw_helper`){
 
  let botembed = new Discord.RichEmbed()
@@ -166,15 +168,14 @@ return message.channel.send(botembed);
  .setColor("#4286f4")
  .addField("רמות גבוהות", "<@461151799924228108>")
  .addField("רמות נמוכות", "<@354982773951430656>")
+ 
+ return message.channel.send(botembed);
 }
 
 if(cmd === `${prefix}prefix`){
 
 message.channel.sendMessage("!")
 }
-
-
- return message.channel.send(botembed);
 
 
 
