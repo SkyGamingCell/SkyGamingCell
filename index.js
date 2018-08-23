@@ -170,7 +170,7 @@ return message.channel.send(botembed);
 
  let botembed = new Discord.RichEmbed()
  .setDescription("עזרה בסייב דה וורלד")
- .setColor("#4286f4")
+ .setColor("random")
  .addField("רמות גבוהות", "<@461151799924228108>")
  .addField("רמות נמוכות", "<@354982773951430656>")
  
