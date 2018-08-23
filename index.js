@@ -162,7 +162,8 @@ return message.channel.send(botembed);
 
  if(message.content == 'נענע'){
 
-  message.channel.sendMessage('נע נע נע נע נע נעעעעעע  ' + ' תתנין');
+  message.channel.sendMessage('נע נע נע נע נע נעעעעעע  ' + ' תתנין')
+  message.channel.sendMesssage(`https://www.youtube.com/watch?v=tFdOiBRkTQk`);
 }
  
  //stw help
