@@ -160,9 +160,9 @@ let botembed = new Discord.RichEmbed()
 return message.channel.send(botembed);
  }
 
- if(message.content == 'נענע תתנין'){
+ if(message.content == 'נענע'){
 
-  message.channel.sendMessage('נענענענע ' + message.author + ', תתנין');
+  message.channel.sendMessage('נע נע  ' + ', תתנין?');
 }
  
  //stw help
