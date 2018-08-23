@@ -160,6 +160,11 @@ let botembed = new Discord.RichEmbed()
 return message.channel.send(botembed);
  }
 
+ if(message.content == 'נענע תתנין'){
+
+  message.channel.sendMessage('נענענענע ' + message.author + ', תתנין');
+}
+ 
  //stw help
  if(cmd === `${prefix}stw_helper`){
 
