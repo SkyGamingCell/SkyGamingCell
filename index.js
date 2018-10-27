@@ -7,18 +7,10 @@ bot.commands = new Discord.Collection();
 
  bot.on('ready', async() => {
    console.log(`${bot.user.username} is online!`);
-  bot.user.setGame(`${bot.guilds.size} servers | SkyGamingCell Videos `);
+  bot.user.setGame(`On SkyGamingCell Videos `);
 });
 
-// Updates the bot's status if he joins a server
-bot.on("guildCreate", guild => {
-   bot.user.setGame(`${bot.guilds.size} servers | SkyGamingCell Videos `);
-});
 
-/// Updates the bot's status if he leaves a servers
-bot.on("guildDelete", guild => {
-    bot.user.setGame(`${bot.guilds.size} servers | SkyGamingCell Videos`);
-});
 
 bot.on("message",async message =>{
 const logsCommands = bot.channels.get(botconfig.logsChannelID);
