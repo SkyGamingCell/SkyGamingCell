@@ -85,17 +85,6 @@ reportschannel.send(reportEmbed)
   return;
 }
 
-//DM command
-mention = message.mentions.first();
- 
- if (msg.startsWish (prefix + "send")) {
-  if (mention == null) { return; }
-  message.delete();
-  mentionMessage = message.content.slice (8);
-  mention.sendMessage (mentionMessage);
-  message.channel.send ("done!";
- }
-
  //ban command
 if(cmd === `${prefix}ban`){
 
