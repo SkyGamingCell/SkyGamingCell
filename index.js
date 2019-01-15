@@ -166,14 +166,12 @@ return message.channel.send(botembed);
 }
  
  //stw help
- if(cmd === `${prefix}stw_helper`){
+ if(cmd === `${prefix}MiddleMan`){
 
  let botembed = new Discord.RichEmbed()
  .setDescription("עזרה בסייב דה וורלד")
  .setColor("random")
- .addField("רמות גבוהות", "<@461151799924228108>")
- .addField("רמות נמוכות", "<@354982773951430656>")
- 
+  .addField("@Middle Man ") 
  return message.channel.send(botembed);
 }
 
