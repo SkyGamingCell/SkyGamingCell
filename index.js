@@ -169,7 +169,7 @@ return message.channel.send(botembed);
 return message.channel.send(serverembed);
 }
  
- if(message.content == 'How much Memebers?'){
+ if(message.content == 'How much Members?'){
      let sicon = message.guild.iconURL;
      let serverembed = new Discord.RichEmbed()
      .setDescription("Members:")
