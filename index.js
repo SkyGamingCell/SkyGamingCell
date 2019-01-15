@@ -176,7 +176,7 @@ return message.channel.send(botembed);
  let botembed = new Discord.RichEmbed()
  .setDescription("Call For Middle Man")
  .setColor("random")
-  .addField("Middle Man", "@Middle Man") 
+  .addField("Middle Man", "<@&534766569499394058>") 
  return message.channel.send(botembed);
 }
 
