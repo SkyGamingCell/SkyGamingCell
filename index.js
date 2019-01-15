@@ -159,7 +159,17 @@ let botembed = new Discord.RichEmbed()
 return message.channel.send(botembed);
  }
 
- if(message.content == 'MemberCount'){
+ if(message.content == 'Member Count'){
+     let sicon = message.guild.iconURL;
+     let serverembed = new Discord.RichEmbed()
+     .setDescription("Members:")
+     .setColor("#75aaff")
+     .addField("Member Count", message.guild.memberCount);
+
+return message.channel.send(serverembed);
+}
+ 
+ if(message.content == 'How much Members?'){
      let sicon = message.guild.iconURL;
      let serverembed = new Discord.RichEmbed()
      .setDescription("Members:")
