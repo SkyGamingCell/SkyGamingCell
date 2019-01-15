@@ -145,7 +145,7 @@ if(cmd === `${prefix}serverinfo`){
  
 if(message.content == 'Who is the Queen?'){
 
-    message.channel.sendMessage(<@&518154633135259651>);
+    message.channel.sendMessage('<@&518154633135259651>');
 }
  
  //bot info command
