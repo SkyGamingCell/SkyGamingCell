@@ -169,7 +169,7 @@ return message.channel.send(botembed);
  if(cmd === `${prefix}MiddleMan`){
 
  let botembed = new Discord.RichEmbed()
- .setDescription("עזרה בסייב דה וורלד")
+ .setDescription("Call For Middle Man")
  .setColor("random")
   .addField("@Middle Man ") 
  return message.channel.send(botembed);
