@@ -179,16 +179,6 @@ return message.channel.send(serverembed);
   message.channel.sendMessage(message.author + ' Need your help ! <@&534766569499394058>');
 }
  
- //stw help
- if(cmd === `${prefix}MiddleMan`){
-
- let botembed = new Discord.RichEmbed()
- .setDescription("Call For Middle Man")
- .setColor("random")
-  .addField("Middle Man", "<@&534766569499394058>") 
- return message.channel.send(botembed);
-}
-
 if(cmd === `${prefix}prefix`){
 
 message.channel.sendMessage("!")
