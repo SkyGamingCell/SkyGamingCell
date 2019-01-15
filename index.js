@@ -143,6 +143,11 @@ if(cmd === `${prefix}serverinfo`){
   message.channel.sendMessage('https://shoppy.gg/@SkyGamingCell');
 }
  
+if(message.content == 'מי המלכה?'){
+
+    message.channel.sendMessage(<@&518154633135259651>);
+}
+ 
  //bot info command
 if(cmd === `${prefix}botinfo`){
 
