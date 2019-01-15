@@ -174,7 +174,7 @@ return message.channel.send(serverembed);
   message.channel.sendMessage('נע נע נע נע נע נעעעעעע  ' + ' תתנין');
 }
  
- if(message.content == 'MiddleMan'){
+ if(message.content == 'Middle Man'){
 
   message.channel.sendMessage('<@&534766569499394058>');
 }
