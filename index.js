@@ -179,12 +179,6 @@ return message.channel.send(serverembed);
 return message.channel.send(serverembed);
 }
  
- if(message.content == 'Yo'){
-     
-     message.channel.sendMessage("Member Count", message.guild.memberCount);
-
-}
- 
  if(message.content == 'נענע'){
 
   message.channel.sendMessage('נע נע נע נע נע נעעעעעע  ' + ' תתנין');
