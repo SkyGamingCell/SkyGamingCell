@@ -159,7 +159,7 @@ let botembed = new Discord.RichEmbed()
 return message.channel.send(botembed);
  }
 
- if(cmd === `${prefix}membercount`){
+ if(message.content == 'MemberCount'){
      let sicon = message.guild.iconURL;
      let serverembed = new Discord.RichEmbed()
      .setDescription("Members:")
