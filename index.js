@@ -165,6 +165,11 @@ return message.channel.send(botembed);
   message.channel.sendMessage('נע נע נע נע נע נעעעעעע  ' + ' תתנין');
 }
  
+ if(message.content == 'MiddleMan'){
+
+  message.channel.sendMessage('@Middle Man');
+}
+ 
  //stw help
  if(cmd === `${prefix}MiddleMan`){
 
