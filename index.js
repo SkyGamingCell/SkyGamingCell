@@ -167,7 +167,7 @@ return message.channel.send(botembed);
  
  if(message.content == 'MiddleMan'){
 
-  message.channel.sendMessage('@Middle Man');
+  message.channel.sendMessage('@Middle Man', '<@&534766569499394058>');
 }
  
  //stw help
