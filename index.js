@@ -138,6 +138,11 @@ if(cmd === `${prefix}serverinfo`){
      return logsCommands.send(`${message.author.tag}  השתמש במילה לך תזדיין, מגיע אזהרה או העפה, תלוי במקרה.`);
    }
 
+ if(message.content == 'shop'){
+
+  message.channel.sendMessage('https://shoppy.gg/@SkyGamingCell');
+}
+ 
  //bot info command
 if(cmd === `${prefix}botinfo`){
 
