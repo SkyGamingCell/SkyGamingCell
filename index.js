@@ -176,7 +176,6 @@ return message.channel.send(serverembed);
      .setColor("#75aaff")
      .addField("Member Count", message.guild.memberCount);
 
-return message.channel.send(serverembed);
 }
  
  if(message.content == 'נענע'){
