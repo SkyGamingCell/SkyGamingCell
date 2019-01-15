@@ -176,7 +176,7 @@ return message.channel.send(serverembed);
  
  if(message.content == 'Middle Man'){
 
-  message.channel.sendMessage(message.author + 'Need your help ! + <@&534766569499394058>');
+  message.channel.sendMessage(message.author + ' Need your help ! <@&534766569499394058>');
 }
  
  //stw help
