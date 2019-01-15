@@ -145,7 +145,7 @@ if(cmd === `${prefix}serverinfo`){
  
 if(message.content == 'מי המלכה שלנו?'){
 
-    message.channel.sendMessage('<@&518154633135259651>');
+    message.channel.sendMessage('ברור שמיכל ! + <@&518154633135259651>');
 }
  
  //bot info command
