@@ -59,7 +59,7 @@ console.log(`${message.author.tag} Ask for help from the bot`);
 
  
  //report command
-if(cmd === `${prefix}report`){
+if(cmd === `${prefix}warn`){
 
 let rUser = message.guild.member(message.mentions.users.first() || message.guild.members.get(args[0]));
 if(!rUser) return message.channel.send("Couldn't find user.");
@@ -68,8 +68,8 @@ let reason = args.join(" ").slice(22);
 let reportEmbed =  new Discord.RichEmbed()
 .setDescription("Reports")
 .setColor("#4286f4")
-.addField("Reported User", `${rUser} with ID: ${rUser.id}`)
-.addField("Reported By", `${message.author} with ID: ${message.author.id}`)
+.addField("Warn User", `${rUser} with ID: ${rUser.id}`)
+.addField("Warned By", `${message.author} with ID: ${message.author.id}`)
 .addField("Channel", message.channel)
 .addField("Time", message.createdAt)
 .addField("Reason", reason);
