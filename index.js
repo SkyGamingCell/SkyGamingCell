@@ -143,9 +143,9 @@ if(cmd === `${prefix}serverinfo`){
   message.channel.sendMessage('https://shoppy.gg/@SkyGamingCell');
 }
  
-if(message.content == 'מי המלכה שלנו?'){
+if(message.content == 'אבישי אתה סולח לי?'){
 
-    message.channel.sendMessage('ברור שמיכל ! + <@&518154633135259651>');
+    message.channel.sendMessage('כןןןן');
 }
  
  //bot info command
