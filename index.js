@@ -7,7 +7,7 @@ bot.commands = new Discord.Collection();
 
  bot.on('ready', async() => {
    console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity(`On SkyGamingCell Videos `);
+  bot.user.setActivity(`I have a penis! `);
 });
 
 
