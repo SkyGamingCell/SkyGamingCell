@@ -156,6 +156,29 @@ if(message.content.toLowerCase().includes("מלך") == true){
      message.channel.sendMessage('איתי הוא שליט הסייבר');
  }
 
+if(message.content.toLowerCase().includes("גילה") == true){
+ 
+ 
+     message.channel.sendMessage('אהבת חיינו');
+ }
+ 
+ if(message.content.toLowerCase().includes("לילה טוב") == true){
+ 
+ 
+     message.channel.sendMessage('לילה כובע ידידי הטוב');
+ }
+ 
+ if(message.content.toLowerCase().includes("לילט") == true){
+ 
+ 
+     message.channel.sendMessage('לילה כובע ידידי היקר');
+ }
+ 
+ if(message.content.toLowerCase().includes("לילה כובע") == true){
+ 
+ 
+     message.channel.sendMessage('גם לך חברי הטוב!');
+ }
  
 if(message.content == 'חברים?'){
 
