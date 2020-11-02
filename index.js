@@ -170,11 +170,6 @@ if(message.content.toLowerCase().includes("גילה") == true){
  
  
  
- if(message.content.toLowerCase().includes("לילה כובע") == true){
- 
- 
-     message.channel.sendMessage('גם לך חברי הטוב!');
- }
  
 if(message.content == 'חברים?'){
 
