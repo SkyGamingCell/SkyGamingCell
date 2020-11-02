@@ -168,11 +168,7 @@ if(message.content.toLowerCase().includes("גילה") == true){
      message.channel.sendMessage('לילה כובע ידידי הטוב');
  }
  
- if(message.content.toLowerCase().includes("לילט") == true){
  
- 
-     message.channel.sendMessage('לילה כובע ידידי היקר');
- }
  
  if(message.content.toLowerCase().includes("לילה כובע") == true){
  
