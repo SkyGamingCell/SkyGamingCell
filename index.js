@@ -194,6 +194,11 @@ return message.channel.send(serverembed);
   message.channel.sendMessage('נע נע נע נע נע נעעעעעע  ' + ' תתנין');
 }
  
+       if(str.toLowerCase().includes("fuck") == true){
+ 
+        message.delete().catch(O_o=>{});
+}
+
  if(message.content == 'Middle Man'){
 
   message.channel.sendMessage(message.author + ' Need your help ! <@&534766569499394058>');
