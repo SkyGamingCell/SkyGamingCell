@@ -144,7 +144,8 @@ if(cmd === `${prefix}serverinfo`){
 }
 
 
-message.channel.sendMessage('str.toLowerCase().includes("fuck"');
+message.channel.sendMessage(str.toLowerCase().includes("fuck"'));
+
 
  
 if(message.content == 'חברים?'){
