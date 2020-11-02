@@ -150,6 +150,11 @@ if(message.content.toLowerCase().includes("fuck") == true){
      message.delete().catch(O_o=>{});
  }
 
+if(message.content.toLowerCase().includes("מלך") == true){
+ 
+ 
+     message.channel.sendMessage('איתי הוא שליט הסייבר');
+ }
 
  
 if(message.content == 'חברים?'){
