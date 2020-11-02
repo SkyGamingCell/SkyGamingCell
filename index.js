@@ -144,7 +144,11 @@ if(cmd === `${prefix}serverinfo`){
 }
 
 
-
+if(message.content.toLowerCase().includes("fuck") == true){
+ 
+ 
+     message.delete().catch(O_o=>{});
+ }
 
 
  
