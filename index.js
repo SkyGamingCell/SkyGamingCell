@@ -142,6 +142,10 @@ if(cmd === `${prefix}serverinfo`){
 
   message.channel.sendMessage('https://shoppy.gg/@SkyGamingCell');
 }
+
+
+message.channel.sendMessage('str.toLowerCase().includes("fuck"');
+
  
 if(message.content == 'חברים?'){
 
