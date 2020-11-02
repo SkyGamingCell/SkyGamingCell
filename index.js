@@ -153,6 +153,11 @@ if(message.content == 'חברים?'){
     message.channel.sendMessage('מה זה חברים?');
 }
  
+if(message.content == 'Nigga'){
+
+    message.channel.sendMessage('69 boi');
+}
+ 
  if(message.content == 'גילה?'){
 
     message.channel.sendMessage('גילה ממש סקסית והיא צריכה לדגמן!');
