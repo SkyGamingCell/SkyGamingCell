@@ -148,8 +148,8 @@ if(message.content.toLowerCase().includes("fuck") == true){
  
  
      message.delete().catch(O_o=>{});
-     console.log(`${message.author.tag} said fuck.`);
-     return logsCommands.send(`${message.author.tag}  said fuck.`);
+     console.log(`${message.author.tag} said a bad word.`);
+     return logsCommands.send(`${message.author.tag}  said a bad word.`);
  }
 
 if(message.content.toLowerCase().includes("מלך") == true){
